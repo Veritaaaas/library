@@ -12,11 +12,39 @@
     </div>
 
     <div class="library">
-
+        <div class="add-book">
+            <button id="add-book-btn">+ Add Book</button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <form id="book-form">
+                    <label for="title">Title:</label><br>
+                    <input type="text" id="title" name="title"><br>
+                    <label for="author">Author:</label><br>
+                    <input type="text" id="author" name="author"><br>
+                    <label for="pages">Total Number of Pages:</label><br>
+                    <input type="number" id="pages" name="pages"><br>
+                    <label for="status">Current Status:</label><br>
+                    <select id="status" name="status">
+                        <option value="read">Read</option>
+                        <option value="unread">Not read</option>
+                    </select><br>
+                    <button type="submit" value="Submit" id="submit">Submit</button>
+                  </form>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="footer">
-        <p>Created by </p>
+        <div class="bookList" id="bookList">
+            
+        </div>
     </div>
+    <div class="watermark">
+        <a href="https://github.com/Veritaaaas">
+        <p><i class="fa-brands fa-github"></i> Created by Veritaaaas </p>
+        </a>
+    </div>
+    <script src="https://kit.fontawesome.com/6e2477efc3.js" crossorigin="anonymous"></script>
+    <script src="script1.js"></script>
 </body>
 </html>

@@ -11,10 +11,100 @@ html, body {
     height: 10%;
     padding-left: 20px;
     background-color:  #eecf9f;
+    z-index: 1;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
 }
 
 .library {
     width: 100%;
-    height: 80%;
-    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    overflow: auto;
+}
+
+.bookList {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: auto;
+}
+
+#add-book-btn {
+    width: 300px;
+    margin: 30px;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    font-size: 35px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+#add-book-btn:hover {
+    background-color: #84fa96;
+    transition: background-color 0.3s ease;
+}
+
+.card {
+    flex-basis: 20%;
+    height: 330px;
+    margin: 15px;
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card button {
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    height: 50px;
+    width: 96%;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.card h2 {
+    font-size: 25px;
+}
+
+.card p {
+    font-size: 20px;
+}
+
+.watermark {
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
